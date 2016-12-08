@@ -31,7 +31,7 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.raise_delivery_errors = true
-  host = 'localhost:3000'
+  host = 'nameless-taiga-30814.herokuapp.com'
   config.action_mailer.default_url_options = { host: host, protocol: 'http' }
 
   config.action_mailer.smtp_settings = {
@@ -39,8 +39,8 @@ Rails.application.configure do
         :port => 587,
         :domain => 'nara.com',
         :authentication => 'plain',
-        :user_name => ENV["leductienttkt@gmail.com"],
-        :password =>   ENV["200319942349"],
+        :user_name => 'leductienttkt@gmail.com',
+        :password => '200319942349',
         :enable_starttls_auto => true
     }
   
