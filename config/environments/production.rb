@@ -39,8 +39,8 @@ Rails.application.configure do
         :port => 587,
         :domain => 'nara.com',
         :authentication => 'plain',
-        user_name: ENV["leductienttkt@gmail.com"]
-        password: ENV["200319942349"]
+        user_name: ENV["leductienttkt@gmail.com"],
+        password: ENV["200319942349"],
         :enable_starttls_auto => true
     }
   
