@@ -1,0 +1,16 @@
+<% provide(:title, 'All Microposts') %>
+
+<marquee><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/w.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/e.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/l.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/c.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/o.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/m.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/e.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/t.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/o.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/n.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/a.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/r.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/a.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/a.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/p.gif" border='0'><a href="http://Taochu.Uhm.vN"><img alt="http://Taochu.Uhm.vN" src="http://Taochu.Uhm.vN/chu/45/p.gif" border='0'></a></marquee>
+<div class="row">
+	<aside class="col-md-4"> 
+ 		<%= link_to image_tag("c.png", alt: "Rails logo", class: "img-responsive") ,root_path %>
+		</aside>
+	<div class="col-md-8">
+		<ul class="microposts">
+  			<h3>Microposts (<%= @microposts.count %>)</h3>
+  			<%= render @microposts %>
+  			<%= will_paginate %>
+		</ul>
+	</div>
+</div>
+

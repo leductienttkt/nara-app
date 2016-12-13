@@ -4,6 +4,8 @@
     <%end%> 
 </ul>
 
+<% if (logged_in?)%>
+<% if (current_user.following?(micropost.user) || current_user?(micropost.user))%>
 <div class="form_comment">
     <%= form_for(micropost.comments.build, html: { multipart: true },
                                            remote: true) do |f| %>
@@ -19,4 +21,6 @@
       <div><%= hidden_field_tag :micropost_id, micropost.id %></div>
       <%= f.submit "Comment", class: "btn btn-primary" %>
     <% end %>
+<% end %>
+<%end%>
 </div>

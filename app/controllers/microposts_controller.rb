@@ -3,6 +3,9 @@ class MicropostsController < ApplicationController
   before_action :logged_in_user, only: [:create, :destroy, :update]
   before_action :correct_user,   only: [:destroy, :update]
 
+  def index
+    @microposts = Micropost.paginate(page: params[:page])
+  end
   def show
     @micropost = Micropost.find(params[:id])
     @comments = @micropost.comments
