@@ -261,10 +261,10 @@ input {
   .content {
     display: block;
     margin-left: 60px;
-    img {
-      display: block;
-      padding: 5px 0;
-    }
+  }
+  .img{
+    display: block;
+    margin-left: 60px;
   }
   .timestamp {
     color: $gray-light;
@@ -276,7 +276,23 @@ input {
     margin-right: 10px;
     margin-top: 5px;
   }
+  .comments {
+    list-style: none;
+    padding: 20px 70px 0px 70px;
+  }
+  .form_comment{
+    display: block;
+    padding: 10px 70px 30px 70px;
+    .field{
+      padding-left: 60px;
+      padding-top: 5px;
+    }
+  }
+  .option{
+    padding-left: 60px;
+  }
 }
+
 
 aside {
   textarea {

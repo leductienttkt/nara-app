@@ -1,0 +1,3 @@
+$("#show_comments-<%= @micropost.id %>").html("<%= escape_javascript(render(@micropost.comments)) %>");
+$("#comments_count-<%= @micropost.id %>").html('<%= link_to "#{@micropost.comments.count} comments ||", @micropost, remote: true%>');
+$("#comment_content_field-<%= @micropost.id %>").val('');

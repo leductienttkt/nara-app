@@ -1,7 +1,8 @@
 class Micropost < ApplicationRecord
   belongs_to :user
+  has_many :comments, dependent: :destroy
   validates :user_id, presence: true
-  validates :content, presence: true, length: { maximum: 140 }
+  validates :content, presence: true
   default_scope -> { order(created_at: :desc) }
   mount_uploader :picture, PictureUploader
   validate  :picture_size
