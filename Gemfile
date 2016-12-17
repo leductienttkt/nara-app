@@ -36,7 +36,6 @@ gem 'faker'
 #upload images
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'fog'
 
 #paginate
 gem 'will_paginate'           
